@@ -1,0 +1,277 @@
+*{
+ background: transparent;
+ background-attachment: fixed;
+ font-family: 'inter';
+ font-weight: 400;
+ font-size: 32px;
+ line-height: 150%;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.espacio{
+    background: url(imagen/colorful-2174045_1280.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    background: url(imagen/brillos01.gif);
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo{
+    padding-top: 20px;
+    margin-left: 5px;
+    width: 15%;
+}
+
+
+.titulo{
+    font-family: fantasy;
+    font-size: 40px;
+    color: gold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+main{
+    background: url(imagen/brillos01.gif);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text-area{
+    border: red;
+    border-radius: 24px;
+    box-shadow: 5px 5px 10px 20px mediumspringgreen;
+    color: aliceblue;
+    margin-top: 70px;
+    height: 510px;
+    width: 80%;
+    text-transform: lowercase;
+    padding: 10px;
+}
+
+.text-area:hover{
+    opacity: 0.3;
+}
+
+::placeholder{
+    color: white;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.mensaje{
+    background: transparent;
+    border: red;
+    box-shadow: 5px 5px 10px 20px cyan;
+    border-radius: 24px;
+    color: aliceblue;
+    margin-top: 70px;
+    height: 510px;
+    padding: 10px;
+}
+
+.mensaje:hover{
+    opacity: 0.3;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.productos{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 55px 0 0 20px;
+}
+
+.productos img{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.botones{
+    margin-top: 18px;
+    display: flex;
+}
+
+.btn-encriptar{
+    background-color:  rgb(7, 212, 212);
+    border: 2px solid gold;
+    border-radius: 30px;
+    color: aliceblue;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+.btn-encriptar:hover{
+    background: rgb(206, 29, 29);
+    transform: scale(1.1); 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-desencriptar{
+    background: rgb(7, 212, 212);
+    border: 2px solid gold;
+    border-radius: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+.btn-desencriptar:hover{
+    background: rgb(186, 73, 247);
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-copiar{
+    background: rgba(14, 50, 229, 0.735);
+    border: 2px solid gold;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px; 
+    font-weight: bold; 
+    transition: 1s all;
+}
+
+.btn-copiar:hover{
+    background: rgba(212, 9, 107, 0.973);
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.informacion{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    padding: 30px;
+}
+
+footer img{
+ margin-left: 100px;
+}
+
+.final{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .caja, .text-area{
+        width: 70%;
+    }
+
+    .container-tt{
+        display: flex;
+        justify-content: center;
+    }
+    
+    main{
+        flex-direction: column;
+    }
+
+    .botones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-desencriptar{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .btn-copiar{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .mensaje{
+        width: 70%;
+    }
+
+    .container-m{
+        display: flex;
+        justify-content: center;
+    }
+
+    .informacion{
+        text-align: center;
+    }
+
+    .productos{
+        width: 350px;
+        margin: auto;
+        margin-top: 55px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:425px){
+    .text-area{
+        height: 400px;
+        font-size: 0.8em;
+        box-shadow: 0 1px 1px 20px mediumspringgreen;
+    }
+
+    .mensaje{
+        height: 350px;
+        box-shadow: 0 1px 1px 20px cyan;
+    }
+
+    .botones button{
+        width: 280px;
+        font-size: 0.7em;
+    }
+
+    .productos{
+        width: 220px;
+        margin: auto;
+        margin-top: 55px;
+        left: 0;
+        right: 0;
+    }
+
+    .informacion{
+        font-size: 0.5em;
+    }
+}
